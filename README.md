@@ -8,15 +8,21 @@ You can see a demo version at http://lab.cogdogblog.com/bigpicture/
 
 The top/splash screen is configured in the Wordpress Customizer. The backdrop image is managed by the **Header Background** controls in the Customizer, which means you have an option of loading several images that can be set to appear at random on page load.
 
-Subsequent sections as you scroll down (or use the automatic generated menu) are managed as separate posts. If the post has a featured image, it's layout will be with that image as a large background, with  title and content in the boxes. The theme automatically alternates between left/right side content
+Subsequent sections as you scroll down (or use the automatic generated menu) are managed as separate posts. If the post has a featured image, it's layout will be with that image as a large background, with  title and content in the boxes. The theme automatically alternates between left/right side content that animates as the page is scrolled into.
 
 ![left side content with featured image](images/bp-featured-left.jpg "left side content with featured image")
 
+[Demo Left Side Content](http://lab.cogdogblog.com/bigpicture/#colors)
+
 ![right side content with featured image](images/bp-featured-right.jpg "right side content with featured image")
+
+[Demo Right Side Content](http://lab.cogdogblog.com/bigpicture/#fast-mover)
 
 Posts without featured images will be displayed as full content, and can accommodate and kind of content, embedded media, etc that a Wordpress editor provides.
 
 ![Wordpress content display](images/bp-content.jpg "Wordpress content display")
+
+[Demo Wordpress Content](http://lab.cogdogblog.com/bigpicture/#content)
 
 This also includes image galleries, and the extended types provided by the Jetpack plugin. There is a built in shortcode for generating a gallery in the animated style of the original theme (see below).
 
@@ -71,7 +77,7 @@ The rest of the top / intro section is configured in the Customizer
 
 Change the title and the blurb content (which can include HTML) 
 
-![](images/bp-customizer-edits.jpg "Intro Section in the Customizer")
+![](images/bp-customize-intro.jpg "Intro Section in the Customizer")
 
 Enter in the **Menu Label** field a one or two word label for how this section will be listed in the top menu (if you leave it blank the men label will read `Intro`).
 
@@ -149,7 +155,10 @@ to read
 
 `[bigpicturegallery ids="176,666,721,720,719,186,194,40,43,38"]`
 
-This will use the images you picked but will display in the format provided by the Big Picture theme.
+This will use the images you picked but will display in the format provided by the Big Picture theme, [see the demo](http://lab.cogdogblog.com/bigpicture/#content) as the screen show does not show the animation nor the slide show!
+
+![](images/bp-gallery.jpg "Big Picture Gallery")
+
 
 If you ever need to edit the Gallery (e.g. change the images), revert the name of the shortcode, use the visual editor in Wordpress, and click the edit icon.
 
