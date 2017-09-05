@@ -30,6 +30,8 @@ Each sections provide bottom arrow navigation to the next section. All content p
 
 The bottom footer can be customized with a social media icon menu and a custom footer menu text.
 
+Big Picture works best for smaller amounts of content in each section, it's meant for high level summaries, and you can use hypertext links to expand to other sites. But still, some people want a lot of content in this site, so a features was added to mark the opening bits of a post to appear on the front, with a link to see expanded content in a single page ([see below for more](#splitting-content-into-see-more)).
+
 
 ## Examples
 
@@ -129,6 +131,24 @@ Look for a setting called **Menu Label** under **Extra Big Picture Stuff** box b
 
 The Dashboard Posts view will list your sections in the order specified. To change the order quickly, hover a title and use the **Quick Edit** link to change the value of the order attribute.
 
+## Splitting Content into See More
+
+Okay, you want to write more content than displays well on the front of the site. Version 0.2 of this theme introduces a template for a single post view, and you can use the Wordpress feature to mark where in your post to split what appears on the front of the site.
+
+![](images/bp-insert-more.jpg "Insert more in the Wordpress editor")
+
+In the Wordpress editor, find the place in  your post where you want this split to occur, and use the **Insert More** button to place the marker.
+
+When an `Insert More` has been added to a post, on the front of your site, only the portion above the line is visible, and a **more...** link is added.
+
+![](images/bp-front-more.jpg "More link appears on front of site")
+
+Following the link leads to a single post view that will open with the featured image at the top (if there is a featured image, otherwise, just the post title appears) and the part of the post above the `Insert More` marker:
+
+![](images/bp-more-single-top.jpg "More link appears on front of site")
+
+The arrow button leads to a view of the rest of the post. This gives you a place to include much more content.
+
 ## Big Picture gallery
 
 You can use the built in Wordpress Gallery tools (under **Add Media** when editing a post) to add a gallery to a plain content section, but this theme has a special style of gallery that animates like the other content ([see the demo site](http://lab.cogdogblog.com/bigpicture/#content)).
@@ -159,8 +179,7 @@ This will use the images you picked but will display in the format provided by t
 
 ![](images/bp-gallery.jpg "Big Picture Gallery")
 
-
-If you ever need to edit the Gallery (e.g. change the images), revert the name of the shortcode, use the visual editor in Wordpress, and click the edit icon.
+If you ever need to edit the Gallery (e.g. change the images), revert the name of the shortcode, use the visual editor in Wordpress, and click the edit icon. Make changes in the image selecion or order, then repeat the editing step of the shortcode.
 
 
 ## Suggested Plugins
@@ -174,7 +193,8 @@ If you ever need to edit the Gallery (e.g. change the images), revert the name o
 
 ## Features / History
 
-* v0.2 (Sep  3, 2017)  First release, for the brave, the few, the daring.
+* v0.1 (Sep  3, 2017)  First release, for the brave, the few, the daring.
+* v0.2 (Sep  5, 2017)  Added template for single post view and support for **Insert More** tags to separate content for front page excerpt and provide a space for more content in a single post view. Removed center alignment for primary content. Added home link to blog title in top left. 
 
 ### Requests
 
