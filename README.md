@@ -135,15 +135,15 @@ The Dashboard Posts view will list your sections in the order specified. To chan
 
 Okay, you want to write more content than displays well on the front of the site. Version 0.2 of this theme introduces a template for a single post view, and you can use the Wordpress feature to mark where in your post to split what appears on the front of the site.
 
-![](images/bp-insert-more.jpg "Insert more in the Wordpress editor")
+![](images/bp-insert-more.jpg "Insert read more in the Wordpress editor")
 
-In the Wordpress editor, find the place in  your post where you want this split to occur, and use the **Insert More** button to place the marker.
+In the Wordpress editor, find the place in  your post where you want this split to occur, and use the **Read More** button to place the marker.
 
-When an `Insert More` has been added to a post, on the front of your site, only the portion above the line is visible, and a **more...** link is added.
+When an `Read More` has been added to a post, on the front of your site, only the portion above the line is visible, and a **more...** link is added.
 
 ![](images/bp-front-more.jpg "More link appears on front of site")
 
-Following the link leads to a single post view that will open with the featured image at the top (if there is a featured image, otherwise, just the post title appears) and the part of the post above the `Insert More` marker:
+Following the link leads to a single post view that will open with the featured image at the top (if there is a featured image, otherwise, just the post title appears) and the part of the post above the `Read More` marker:
 
 ![](images/bp-more-single-top.jpg "More link appears on front of site")
 
@@ -194,7 +194,7 @@ If you ever need to edit the Gallery (e.g. change the images), revert the name o
 ## Features / History
 
 * v0.1 (Sep  3, 2017)  First release, for the brave, the few, the daring.
-* v0.2 (Sep  5, 2017)  Added template for single post view and support for **Insert More** tags to separate content for front page excerpt and provide a space for more content in a single post view. Removed center alignment for primary content. Added home link to blog title in top left. 
+* v0.2 (Sep  5, 2017)  Added template for single post view and support for **Read More** tags to separate content for front page excerpt and provide a space for more content in a single post view. Removed center alignment for primary content. Added home link to blog title in top left. 
 
 ### Requests
 
