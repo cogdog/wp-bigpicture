@@ -9,8 +9,21 @@
 		<?php wp_head(); ?>
 
 		<style>
+		
+		<?php if ( is_home() ):?>
+		
 		#intro {
 			background: url('<?php echo get_stylesheet_directory_uri()?>/assets/images/overlay.png'), url("<?php header_image(); ?>");
+		
+		<?php elseif ( is_single() ):?>
+		
+		#top {
+			background: url('<?php echo get_stylesheet_directory_uri()?>/assets/images/overlay.png'), url("<?php echo get_the_post_thumbnail_url(); ?>");
+		
+		
+		<?php endif?>
+
+
 			background-size: 256px 256px, cover;
 			background-attachment: fixed, fixed;
 			background-position: top left, bottom center;
@@ -30,7 +43,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><?php bloginfo( 'name' ); ?></h1>
+				<h1><a href="<?php echo site_url();?>"><?php bloginfo( 'name' ); ?></a></h1>
 
 				<nav>
 					<ul>

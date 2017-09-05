@@ -123,7 +123,7 @@ if ( $the_query->have_posts() ) {
 							<h2><?php the_title()?></h2>
 						</header>
 					
-						<?php the_content();?>
+						<?php the_content( 'more...' );?>
 						
 						<?php edit_post_link('Edit This', '<p class="edit-this"><span class="fa fa-pencil-square-o" aria-hidden="true"></span> ', '</p>');?>
  					
