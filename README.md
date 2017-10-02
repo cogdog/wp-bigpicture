@@ -1,6 +1,6 @@
 # HTML5up Big Picture Theme for Wordpress
 
-A configurable Wordpress Theme version of [HTML5up Big Picture Theme](https://html5up.net/big-picturen) made for the internet by [@cogdog](http://cog.dog). It creates a simple, elegant calling card something that looks like
+A configurable Wordpress Theme version of [HTML5up Big Picture Theme](https://html5up.net/big-picture) made for the internet by [@cogdog](http://cog.dog). It creates a simple, elegant calling card something that looks like
 
 ![Screenshot of Theme](screenshot.png "Screenshot of Theme")
 
