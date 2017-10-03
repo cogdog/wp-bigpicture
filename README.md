@@ -38,6 +38,7 @@ Big Picture works best for smaller amounts of content in each section, it's mean
 * Demo version http://lab.cogdogblog.com/bigpicture/
 * JustLego101 http://justlego101.com/ 
 * Laura Killam Dossier http://dossier.nursekillam.com/
+* Aaron Davis http://home.readwriterespond.com/
 
 
 ## Installing
