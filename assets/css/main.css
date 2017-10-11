@@ -2182,3 +2182,17 @@ a.more-link {
     text-align: center;
 }
 
+.main.style1 h2 {
+    text-shadow: -2px -2px 0 #060606, 2px -2px 0 #060606, -2px 2px 0 #060606, 2px 2px 0 #060606;
+}
+
+.main.style1 p {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.main.style2 > .content {
+    opacity: 0.9;
+}
+
+
