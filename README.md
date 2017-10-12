@@ -211,6 +211,7 @@ If you ever need to edit the Gallery (e.g. change the images), revert the name o
 
 * v0.1 (Sep  3, 2017)  First release, for the brave, the few, the daring.
 * v0.2 (Sep  5, 2017)  Added template for single post view and support for **Read More** tags to separate content for front page excerpt and provide a space for more content in a single post view. Removed center alignment for primary content. Added home link to blog title in top left. 
+* v0.3 (Oct  11, 2017) Small styling improvements- outline title text, bigger text below, added transparency to the sliding box overlays
 
 ### Requests
 
