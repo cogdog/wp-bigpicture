@@ -1,10 +1,5 @@
 <?php 
-
 	get_header(); 
-	
-	
-	// Declare global $more for content control
-	global $more;
 
 	// keep a running list of the menu labels for intersection navigation
 	$menulist[] = sanitize_title( get_bigpicture_intro_menu_label() );
@@ -51,15 +46,12 @@
 	
 			<?php if ( has_post_thumbnail() ) :?>
 			
-			<?php $more = 0;?>
 
 			<section id="top" class="main style1 dark fullscreen">
 				<div class="content">
 					<header>
 						<h2><?php the_title(); ?></h2>
 					</header>
-	
-					<?php the_content('');?>
 					
 					<footer>
 						<a href="#more" class="button style2 down">More</a>
@@ -76,17 +68,9 @@
 						<header>
 							<h2><?php the_title(); ?></h2>
 						</header>
-					
-						<?php  the_content()?>
-				
-					<?php else :?>
-					
-						<?php 
-								$more = 1;
-								the_content('', TRUE);
-						?>
-						
 					<?php endif?>
+					
+					<?php  the_content()?>
 						
 					<?php edit_post_link('Edit This', '<p class="edit-this"><span class="fa fa-pencil-square-o" aria-hidden="true"></span> ', '</p>');?>
 

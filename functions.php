@@ -195,7 +195,7 @@ function bigpicture_register_theme_customizer( $wp_customize ) {
 
 	// Add setting for front text
 	$wp_customize->add_setting( 'intro_blurb_text', array(
-		 'default'           => __( 'I am a compelling blob of text. <strong>HTML</strong> is okay here.', 'bigpicture' ),
+		 'default'           => __( 'I am a compelling blob of text. <em>HTML</em> is okay here.', 'bigpicture' ),
 		 'sanitize_callback' => 'bigpicture_nosanitize_text'
 	) );
 	// Add control for front text
