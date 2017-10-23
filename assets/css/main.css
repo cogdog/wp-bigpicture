@@ -2174,7 +2174,6 @@
 	margin-right: auto;
 }
 
-
 span.social-network-name {
     display: none;
 }
@@ -2203,4 +2202,18 @@ a.more-link {
 .style3 h2, .style3 h3, .style3 h4, .style3 h5,  .style3 h6  {
     text-align: center;
 }
+
+.main.style1 h2 {
+    text-shadow: -2px -2px 0 #060606, 2px -2px 0 #060606, -2px 2px 0 #060606, 2px 2px 0 #060606;
+}
+
+.main.style1 p {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.main.style2 > .content {
+    opacity: 0.9;
+}
+
 
