@@ -13,12 +13,12 @@
 		<?php if ( is_home() ):?>
 		
 		#intro {
-			background: url('<?php echo get_stylesheet_directory_uri()?>/assets/images/overlay.png'), url("<?php header_image(); ?>");
+			background: url('<?php echo get_stylesheet_directory_uri()?>/assets/css/images/overlay.png'), url("<?php header_image(); ?>");
 		
 		<?php elseif ( is_single() or is_page() ):?>
 		
 		#top {
-			background: url('<?php echo get_stylesheet_directory_uri()?>/assets/images/overlay.png'), url("<?php echo get_the_post_thumbnail_url(); ?>");
+			background: url('<?php echo get_stylesheet_directory_uri()?>/assets/css/images/overlay.png'), url("<?php echo get_the_post_thumbnail_url(); ?>");
 		
 		
 		<?php endif?>

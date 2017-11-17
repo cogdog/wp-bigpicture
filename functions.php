@@ -19,6 +19,9 @@ function bigpicture_setup() {
 	// image sizes for the Big Picture gallery
 	add_image_size( 'gallery-full', 607, 590, true );
 	add_image_size( 'gallery-thumb', 440, 276, true );
+	
+	// another size to give typical width images
+	add_image_size( 'bp_size', 700 );
 
 	
 	// give us custom headers (used for background of intro section)

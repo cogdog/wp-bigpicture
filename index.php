@@ -40,7 +40,7 @@
 			// build the custom CSS to put featured images in background
 			if ( has_post_thumbnail() ) {
 				$section_css .= '#' . sanitize_title( $menu_label ) . '{
-background: url("' .  get_stylesheet_directory_uri() . '/assets/images/overlay.png"), url("' . get_the_post_thumbnail_url() . '");
+background: url("' .  get_stylesheet_directory_uri() . '/assets/css/images/overlay.png"), url("' . get_the_post_thumbnail_url() . '");
 background-size: 256px 256px, cover;
 background-attachment: fixed, fixed;
 background-position: top left, center center;

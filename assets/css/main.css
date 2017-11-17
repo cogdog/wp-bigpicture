@@ -27,7 +27,11 @@
 	}
 
 	ol, ul {
-		list-style: none;
+		/* list-style: none; */
+	}
+	
+	li {
+    	margin-left: 2em;
 	}
 
 	blockquote, q {
@@ -2155,6 +2159,45 @@
 
 /* WP Alignment */
 
+figcaption, figure {
+	display:block;
+}
+
+
+img[class*="wp-image-"], .wp-caption img {
+	margin-top: 2em;
+    height: auto;
+    width: 100%;
+}
+
+.wp-caption {
+	color: #666;
+	font-size: 0.8125rem;
+	font-style: italic;
+	width: 100%!important;
+	margin-bottom: 2em;
+}
+
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	border-bottom: 1px solid #ddd;
+    line-height: 1.5;
+    padding-bottom: 0.2em;
+}
+
+
+
+embed,
+iframe,
+object {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
 .alignleft {
 	display: inline;
 	float: left;
@@ -2177,6 +2220,8 @@
 span.social-network-name {
     display: none;
 }
+
+
 
 p.edit-this {
     text-align: right;
