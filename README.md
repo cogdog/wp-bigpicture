@@ -35,10 +35,13 @@ Big Picture works best for smaller amounts of content in each section, it's mean
 
 ## Examples
 
-* Demo version http://lab.cogdogblog.com/bigpicture/
+* Aaron Davis http://home.readwriterespond.com/
+* Affordances of [silly] Digital Media (workshop) https://cog.dog/roo/silly/
+* First version http://lab.cogdogblog.com/bigpicture/
 * JustLego101 http://justlego101.com/ 
 * Laura Killam Dossier http://dossier.nursekillam.com/
-* Aaron Davis http://home.readwriterespond.com/
+* Show Your Work! (workshop) https://cog.dog/roo/show/
+* What Works in Stories? (workshop) https://cog.dog/roo/storymaking/
 
 ## Installing from Scratch
 
