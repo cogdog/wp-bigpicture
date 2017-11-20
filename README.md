@@ -37,6 +37,7 @@ Big Picture works best for smaller amounts of content in each section, it's mean
 
 * Aaron Davis http://home.readwriterespond.com/
 * Affordances of [silly] Digital Media (workshop) https://cog.dog/roo/silly/
+* Edudoodle Portfolio http://edudoodle.com/
 * First version http://lab.cogdogblog.com/bigpicture/
 * JustLego101 http://justlego101.com/ 
 * Laura Killam Dossier http://dossier.nursekillam.com/
