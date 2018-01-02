@@ -111,27 +111,38 @@ The bottom left of the footer will by default display the name of the site and w
 
 However, the theme supports the use of a plugin for replacing the bottom left of the footer with customized menu of social media links.
 
-To have a customized set of icon links in the footer, install and activate the [Customizer Social Icons](https://wordpress.org/plugins/customizer-social-icons/) plugin. This allows you to create a menu of links to social media sites.
+> **NOTE** Previous versions of this theme recommended the [Customizer Social Icons](https://wordpress.org/plugins/customizer-social-icons/) plugin but it conflicts with the current version of Wordpress and make the Customizer unusable. If you have this plugin, Deactivate it and delete it.  You will not lose your menus, just follow the instructions below to modifying your menu.
 
-Open the Customizer, and look under Menus to add a new menu. Call it whatever you like Under **Display Location** check the box for `Social Media`. 
+To have a customized set of icon links in the footer, install and activate the [Font Awesome 4 Menus](https://wordpress.org/plugins/font-awesome-4-menus/) plugin. This allows you to add icon to any menu item.
 
-![](images/social-menu-location-set.jpg "Social Media Icons")
+From the Wordpress Dashboard look under **Appearances** for **Menus**. Click **create a new menu**  name it whatever you like -- `social` is  a good choice. Under  **Menu Settings** next to **Display Location** check the box for `Social Media`. 
 
-Now when you look at the menus, open the entry for this new menu and click **+ Add Items** Open the menu under `Social Media Icons` - it will be added as a new menu item on the list. Add as many as you like.
+To add a social media (or any link), open the panel for **Custom Link**. 
 
-![](images/social-links-added.jpg "Adding Social Media Icons")
+![](images/add-custom-link.jpg "Adding Menu Items Links")
 
-Open up a new item and edit the link to your own address in a particular site:
+Enter a title for the site and provide the URL that points to your content on that site. Add as many as you like. You can drag and drop them to change the order.
 
-![](images/social-links-add-url.jpg "Updating info")
+To set the icon, you must first enable the visibility of CSS classes for each menu item.  Click **Screen Options** in the upper right, and check the box for **CSS Classes**.
 
-Menu items can be re-ordered by drag and drop.
+![](images/screen-options.jpg "Enabling screen options for menus")
 
-Return to the main screen for the Customizer, and open the panel for **Social Icons**. Here you can select icon styles, color, size, and spacing.
+Open an item in your Social Menu and you will now see a field for entering CSS Class names. You have the choice to add from [well over 400 icons in the Font Awesome collection](http://fontawesome.io/icons/). Find the name of the icon you wish to use, and enter it's name as a CSS class with `fa-` in front. For example, these are the class names to render the icon for popular sites:
 
-![](images/social-links-settings.jpg "Modifying Social Media Icons")
+* fa-twitter
+* fa-facebook
+* fa-youtube
+* fa-linkedin
+* fa-instagram
+* fa-flickr
 
-Use the color `#999b9b` to match the footer text.
+With the Font Awesome icons, you can add any site you wish to be in your footer and pick the icon you prefer.
+
+**Save** your menu and check out the spiffy icons in the footer.
+
+![](images/font-awesome-icons.jpg "")
+
+
 
 ## Editing Content
 
@@ -214,7 +225,8 @@ If you ever need to edit the Gallery (e.g. change the images), revert the name o
 * v0.1 (Sep  3, 2017)  First release, for the brave, the few, the daring.
 * v0.2 (Sep  5, 2017)  Added template for single post view and support for **Read More** tags to separate content for front page excerpt and provide a space for more content in a single post view. Removed center alignment for primary content. Added home link to blog title in top left. 
 * v0.3 (Oct  11, 2017) Small styling improvements- outline title text, bigger text below, added transparency to the sliding box overlays
-* v0.3 (Oct  13, 2017) Added template for standalone Wordpress Page.
+* v0.4 (Oct  13, 2017) Added template for standalone Wordpress Page.
+* v0.6 (Jan  1, 2018)  Deprecated use of Customizer Social Icons and re-wrote instructions to use Font-Awesome 4 Menus
 
 ### Requests
 

@@ -197,18 +197,18 @@ function bigpicture_register_theme_customizer( $wp_customize ) {
 
 
 	// Add setting for front text
-	$wp_customize->add_setting( 'intro_blurb_text', array(
-		 'default'           => __( 'I am a compelling blob of text. <em>HTML</em> is okay here.', 'bigpicture' ),
-		 'sanitize_callback' => 'bigpicture_nosanitize_text'
+	$wp_customize->add_setting( 'intro_blurb_content', array(
+		 'default'           => __( 'I am a compelling blob of text to put below the big name at the top. Just <em>basic</em> <strong>HTML</strong> is okay here.<br />Linebreaks and <a href="https://cog.dog/">links to cool stuff</a> are good too.', 'bigpicture' ),
+		 'sanitize_callback' => 'bigpicture_sanitize_html'
 	) );
 	// Add control for front text
 	$wp_customize->add_control( new WP_Customize_Control(
 	    $wp_customize,
 		'intro_blurb_text',
 		    array(
-		        'label'    => __( 'Intro Blurb', 'bigpicture' ),
+		        'label'    => __( 'Intro Blurb (allowable HTML tags are: a, em, strong, br)', 'bigpicture' ),
 		        'section'  => 'intro_stuff',
-		        'settings' => 'intro_blurb_text',
+		        'settings' => 'intro_blurb_content',
 		        'type'     => 'textarea'
 		    )
 	    )
@@ -264,14 +264,26 @@ function bigpicture_register_theme_customizer( $wp_customize ) {
 	    return sanitize_text_field( $text );
 	}
 	
-	// convert string to a slugn worthy one
+	// convert string to a slug-worthy one
 	function slug_text ( $text ) {
 		 return sanitize_title( $text );
 	}
 
- 	// Don't Sanitize text
-	function bigpicture_nosanitize_text( $value ) {
+ 	// Allow just some html
+	function bigpicture_sanitize_html( $value ) {
+	
+		$allowed_html = [
+			'a'      => [
+				'href'  => [],
+				'title' => [],
+			],
+			'br'     => [],
+			'em'     => [],
+			'strong' => [],
+		];
+
 		return $value;
+		// return  wp_kses( $value, $allowed_html );
 	}	
 	
 }
@@ -296,8 +308,8 @@ function bigpicture_intro_header() {
 
 
 function bigpicture_intro_blurb() {
-	 if ( get_theme_mod( 'intro_blurb_text') != "" ) {
-	 	echo '<p>' . get_theme_mod( 'intro_blurb_text') . '</p>';
+	 if ( get_theme_mod( 'intro_blurb_content') != "" ) {
+	 	echo '<p>' . get_theme_mod( 'intro_blurb_content') . '</p>';
 	 }	else {
 	 	echo '<p>This is the exciting tag line you <strong>might</strong> customize!</p>';
 	 }

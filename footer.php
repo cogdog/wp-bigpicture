@@ -3,7 +3,7 @@
 
 				<!-- social ucons -->
 				<?php 
-				if (  function_exists( 'customizer_social_icons_autoload' ) AND has_nav_menu( 'bigpicture-social' ) ) {
+				if (  has_nav_menu( 'bigpicture-social' ) ) {
 					wp_nav_menu( array( 'theme_location' => 'bigpicture-social', 'menu_class' => 'actions' ) );
 				} else {
 					// use blog name if no social icon menu set up
