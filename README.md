@@ -111,9 +111,9 @@ The bottom left of the footer will by default display the name of the site and w
 
 However, the theme supports the use of a plugin for replacing the bottom left of the footer with customized menu of social media links.
 
-> **NOTE** Previous versions of this theme recommended the [Customizer Social Icons](https://wordpress.org/plugins/customizer-social-icons/) plugin but it conflicts with the current version of Wordpress and make the Customizer unusable. If you have this plugin, Deactivate it and delete it.  You will not lose your menus, just follow the instructions below to modifying your menu.
+> **NOTE** Previous versions of this theme recommended the [Customizer Social Icons](https://wordpress.org/plugins/customizer-social-icons/) plugin but it conflicts with the current version of Wordpress and make the Customizer unusable. If you have this plugin, Deactivate it and delete it.  You will not lose your menus, just follow the instructions below to modify your menu to work with a different plugin.
 
-To have a customized set of icon links in the footer, install and activate the [Font Awesome 4 Menus](https://wordpress.org/plugins/font-awesome-4-menus/) plugin. This allows you to add icon to any menu item.
+To have a customized set of icon links in the footer, install and activate the [Font Awesome 4 Menus](https://wordpress.org/plugins/font-awesome-4-menus/) plugin. This allows you to add an icon to any menu item.
 
 From the Wordpress Dashboard look under **Appearances** for **Menus**. Click **create a new menu**  name it whatever you like -- `social` is  a good choice. Under  **Menu Settings** next to **Display Location** check the box for `Social Media`. 
 
@@ -127,7 +127,9 @@ To set the icon, you must first enable the visibility of CSS classes for each me
 
 ![](images/screen-options.jpg "Enabling screen options for menus")
 
-Open an item in your Social Menu and you will now see a field for entering CSS Class names. You have the choice to add from [well over 400 icons in the Font Awesome collection](http://fontawesome.io/icons/). Find the name of the icon you wish to use, and enter it's name as a CSS class with `fa-` in front. For example, these are the class names to render the icon for popular sites:
+Open an item in your Social Menu and you will now see a field for entering CSS Class names. You have the choice to add from [well over 400 icons in the Font Awesome collection](http://fontawesome.io/icons/). Find the name of the icon you wish to use, and enter it's name as a CSS class with `fa-` in front. 
+
+For example, these are the class names to render the icon for typical social media sites (these should be all lower case):
 
 * fa-twitter
 * fa-facebook
@@ -213,7 +215,7 @@ If you ever need to edit the Gallery (e.g. change the images), revert the name o
 
 ## Suggested Plugins
 
-* [Customizer Social Icons](https://wordpress.org/plugins/customizer-social-icons/) is needed to activate the social media icons on the front page
+* [Font Awesome 4 Menus](https://wordpress.org/plugins/font-awesome-4-menus/) used to add the  icons to the social media links in the footer
 * [Fluid Video Embeds](https://wordpress.org/plugins/fluid-video-embeds/) will make sure your auto embedded videos (and other content wordpress can embed by URL) are responsive sized to fill the column width
 * [Easy Theme and Plugin Upgrades](https://wordpress.org/plugins/easy-theme-and-plugin-upgrades/) allows you yo update the theme by uploading the zip file again as a new server (because wordpress does not provide this capability)
 * [JetPack](https://wordpress.org/plugins/jetpack/) can add a number of capabilities, such as adding a contact form or a variety of other image galleries (try Mosaic). If you do [create a contact form](https://jetpack.com/support/contact-form/), make sure you also add and activate [Akismet](http://akismet.com/) because *you will get spam*
@@ -222,11 +224,12 @@ If you ever need to edit the Gallery (e.g. change the images), revert the name o
 
 ## Features / History
 
-* v0.1 (Sep  3, 2017)  First release, for the brave, the few, the daring.
-* v0.2 (Sep  5, 2017)  Added template for single post view and support for **Read More** tags to separate content for front page excerpt and provide a space for more content in a single post view. Removed center alignment for primary content. Added home link to blog title in top left. 
-* v0.3 (Oct  11, 2017) Small styling improvements- outline title text, bigger text below, added transparency to the sliding box overlays
-* v0.4 (Oct  13, 2017) Added template for standalone Wordpress Page.
 * v0.6 (Jan  1, 2018)  Deprecated use of Customizer Social Icons and re-wrote instructions to use Font-Awesome 4 Menus
+* v0.4 (Oct  13, 2017) Added template for standalone Wordpress Page.
+* v0.3 (Oct  11, 2017) Small styling improvements- outline title text, bigger text below, added transparency to the sliding box overlays
+* v0.2 (Sep  5, 2017)  Added template for single post view and support for **Read More** tags to separate content for front page excerpt and provide a space for more content in a single post view. Removed center alignment for primary content. Added home link to blog title in top left. 
+* v0.1 (Sep  3, 2017)  First release, for the brave, the few, the daring.
+
 
 ### Requests
 
