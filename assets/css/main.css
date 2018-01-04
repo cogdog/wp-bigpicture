@@ -2217,11 +2217,9 @@ object {
 	margin-right: auto;
 }
 
-span.social-network-name {
+span.social-network-name, span.fontawesome-text {
     display: none;
 }
-
-
 
 p.edit-this {
     text-align: right;
