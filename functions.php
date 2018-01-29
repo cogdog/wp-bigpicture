@@ -282,8 +282,7 @@ function bigpicture_register_theme_customizer( $wp_customize ) {
 			'strong' => [],
 		];
 
-		return $value;
-		// return  wp_kses( $value, $allowed_html );
+		return  wp_kses( $value, $allowed_html );
 	}	
 	
 }
