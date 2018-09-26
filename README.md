@@ -45,12 +45,20 @@ Big Picture works best for smaller amounts of content in each section, it's mean
 
 * Aaron Davis http://home.readwriterespond.com/
 * Affordances of [silly] Digital Media (workshop) https://cog.dog/roo/silly/
+* Developing Digital Fluency through the Open Web & Connected Learning (Coventry University) http://alanlevineetal.coventry.domains/
 * Edudoodle Portfolio http://edudoodle.com/
 * First version http://lab.cogdogblog.com/bigpicture/
+* Fourwinds Holiday Cottage http://fourwindsholidaycottage.com/
 * JustLego101 http://justlego101.com/ 
 * Laura Killam Dossier http://dossier.nursekillam.com/
+* Maha Bali & Colleagues (DMLL Visiting Fellows, Coventry University) http://mahabalietal.coventry.domains/
+* North and South Main Streets "Explore our stories. Touring Cork city through sound!" http://nms.pennyjohnston.org/cms/
+* Open Learning Lab (Lansing Community College) https://lab.openlcc.net/
 * Show Your Work! (workshop) https://cog.dog/roo/show/
+* The Road in Spain (Hans and Jennifer Anderson) http://theroadinspain.com/
 * What Works in Stories? (workshop) https://cog.dog/roo/storymaking/
+
+
 
 ## Installing from Scratch
 
