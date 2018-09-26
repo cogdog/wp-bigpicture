@@ -495,4 +495,9 @@ function strip_first_numbers( $str ) {
 }
 
 
+// Load plugin requirements file to display admin notices.
+require get_template_directory() . '/inc/splot-plugins.php';
+
+
+
 ?>

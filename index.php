@@ -14,7 +14,7 @@
 		'post_status' => 'publish', 
 		'orderby' => 'menu_order', 
 		'order' => 'ASC',
-		'posts_per_page' => 10,
+		'posts_per_page' => -1,
 	) );
 
 	// First Loop for the nav and extra CSS
@@ -32,14 +32,14 @@
 			}
 			
 			// add to navigation mennu	
-			echo '<li><a href="#' . sanitize_title(  $menu_label ) . '">' . $menu_label . '</a></li>';
+			echo '<li><a href="#' . sanitize_title(  strip_first_numbers( $menu_label ) ) . '">' . $menu_label . '</a></li>';
 			
 			// keep track for later use
 			$menulist[] = $menu_label;
 			
 			// build the custom CSS to put featured images in background
 			if ( has_post_thumbnail() ) {
-				$section_css .= '#' . sanitize_title( $menu_label ) . '{
+				$section_css .= '#' . strip_first_numbers( sanitize_title( $menu_label ) ) . '{
 background: url("' .  get_stylesheet_directory_uri() . '/assets/css/images/overlay.png"), url("' . get_the_post_thumbnail_url() . '");
 background-size: 256px 256px, cover;
 background-attachment: fixed, fixed;
@@ -117,7 +117,7 @@ if ( $the_query->have_posts() ) {
 				$sideclass = ($is_rightside) ? 'right' : 'left';
 				?>
 				
-				<section id="<?php echo sanitize_title( $menulist[$section_count] )?>" class="main style2 <?php echo $sideclass?>  dark fullscreen">
+				<section id="<?php echo sanitize_title( strip_first_numbers( $menulist[$section_count] ) )?>" class="main style2 <?php echo $sideclass?>  dark fullscreen">
 					<div class="content box style2">
 						<header>
 							<h2><?php the_title()?></h2>
