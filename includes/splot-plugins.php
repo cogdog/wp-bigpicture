@@ -48,15 +48,18 @@ class Splot_Theme_Plugin_Enhancements {
 			return;
 		}
 
-		// Define our TWU Portfolio plugin as a necessary plugin.
-		$this->plugins = array(
+		// Define plugins recommended / required
+		$this->plugins = array(			
 			array(
-				'slug'    => 'font-awesome-4-menus',
-				'name'    => 'Font Awesome 4 Menus',
+				'slug'    => 'font-awesome-5-menus',
+				'name'    => 'Font Awesome 5 for Menus',
+				'download' => 'https://github.com/cogdog/font-awesome-5-menus',
 				'message' => sprintf(
-					esc_html__( 'The %1$s is suggested to use the social media menu in this theme.', 'big-picture' ),
-					'<strong>' . esc_html__( 'Font Awesome 4 Menus plugin', 'big-picture' ) . '</strong>' ),
+					esc_html__( 'The %1$s allows you to create a menu of social icon links. If you have the version 4 plugin, please de-activate and delete.', 'dimension' ),
+					'<strong>' . esc_html__( 'Font Awesome 5 for Menus plugin', 'dimension' ) . '</strong>' ),
 			),
+			
+			
 		);
 		
 		
@@ -76,6 +79,11 @@ class Splot_Theme_Plugin_Enhancements {
 	function set_plugin_status() {
 		// Get the names of the installed plugins.
 		$installed_plugin_names = wp_list_pluck( get_plugins(), 'Name' );
+		
+		echo '<!-- plugins:';
+		var_dump($installed_plugin_names);
+		echo '-->';
+		
 
 		foreach ( $this->plugins as $key => $plugin ) {
 
@@ -124,20 +132,30 @@ class Splot_Theme_Plugin_Enhancements {
 			if ( 'to-activate' === $plugin['status'] ) {
 				$activate_url = $this->plugin_activate_url( $plugin['slug'] );
 				$notice .= sprintf(
-					esc_html__( ' To do this, activate %1$s. %2$s', 'big-picture' ),
+					esc_html__( ' To do this, activate %1$s. %2$s', 'dimension' ),
 					esc_html( $plugin['name'] ),
-					( $activate_url ) ? '<a href="' . $activate_url . '">' . esc_html__( 'Activate Now', 'big-picture' ) . '</a>' : ''
+					( $activate_url ) ? '<a href="' . $activate_url . '">' . esc_html__( 'Activate Now', 'trucollector' ) . '</a>' : ''
 				);
 			}
 
 			// Download message.
 			if ( 'to-install' === $plugin['status'] ) {
 				$install_url = $this->plugin_install_url( $plugin['slug'] );
-				$notice .= sprintf(
-					esc_html__( ' To do this, install %1$s. %2$s', 'big-picture' ),
-					esc_html( $plugin['name'] ),
-					( $install_url ) ? '<a href="' . $install_url . '">' . esc_html__( 'Install Now', 'big-picture' ) . '</a>' : ''
-				);
+				
+				if ($install_url) {
+					// we have a wp rep install link
+					$notice .= sprintf(
+						esc_html__( ' To do this, install %1$s. %2$s', 'dimension' ),
+						esc_html( $plugin['name'] ),
+						( $install_url ) ? '<a href="' . $install_url . '">' . esc_html__( 'Install Now', 'dimension' ) . '</a>' : ''
+					);
+				} elseif ( $plugin['download']  ) {
+					$notice .= sprintf(
+						esc_html__( ' To use this plugin, download %1$s. %2$s and manually install.', 'dimension' ),
+						esc_html( $plugin['name'] ),
+						( $plugin['download'] ) ? '<a href="' . $plugin['download'] . '" target="_blank">' . esc_html__( 'Download source', 'dimension' ) . '</a>' : ''
+					);	
+				}
 			}
 
 			$notice .= '</p>';
@@ -215,7 +233,7 @@ function splot_enqueue_scripts() {
 	if ( is_admin() && get_user_meta( get_current_user_id(), 'splot_admin_notice', true ) !== 'dismissed' ) {
 
 		// Adds our JS file to the queue that WordPress will load
-		wp_enqueue_script( 'splot_admin_script', get_stylesheet_directory_uri() . '/inc/splot-plugins.js', array( 'jquery' ), '20180901', true );
+		wp_enqueue_script( 'splot_admin_script', get_stylesheet_directory_uri() . '/includes/splot-plugins.js', array( 'jquery' ), '20180901', true );
 
 		// Make some data available to our JS file
 		wp_localize_script( 'splot_admin_script', 'splot_admin', array(
@@ -232,14 +250,14 @@ add_action( 'admin_enqueue_scripts', 'splot_enqueue_scripts' );
 function splot_dismiss_admin_notice() {
 	// Verify the security nonce and die if it fails
 	if ( ! isset( $_POST['splot_admin_nonce'] ) || ! wp_verify_nonce( $_POST['splot_admin_nonce'], 'splot_admin_nonce' ) ) {
-		wp_die( __( 'Your request failed permission check.', 'big-picture' ) );
+		wp_die( __( 'Your request failed permission check.', 'trucollector' ) );
 	}
 	// Store the user's dimissal so that the notice doesn't show again
 	update_user_meta( get_current_user_id(), 'splot_admin_notice', 'dismissed' );
 	// Send success message
 	wp_send_json( array(
 		'status' => 'success',
-		'message' => __( 'Your request was processed. See ya!', 'big-picture' )
+		'message' => __( 'Your request was processed. See ya!', 'trucollector' )
 	) );
 }
 add_action( 'wp_ajax_splot_admin_notice', 'splot_dismiss_admin_notice' );

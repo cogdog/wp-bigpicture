@@ -119,9 +119,9 @@ The bottom left of the footer will by default display the name of the site and w
 
 However, the theme supports the use of a plugin for replacing the bottom left of the footer with customized menu of social media links.
 
-> **NOTE** Previous versions of this theme recommended the [Customizer Social Icons](https://wordpress.org/plugins/customizer-social-icons/) plugin but it conflicts with the current version of Wordpress and make the Customizer unusable. If you have this plugin, Deactivate it and delete it.  You will not lose your menus, just follow the instructions below to modify your menu to work with a different plugin.
+> **NOTE** Previous versions of the themes used the [Font Awesome 4 Menus](https://wordpress.org/plugins/font-awesome-4-menus/) plugin, which is not compatible with the latest set of [Font Awesome icons](https://fontawesome.com/icons) I have built an update to this plugin in you want access to a larger set of icons. You will also need to add `fab` to the menu class names (see below)
 
-To have a customized set of icon links in the footer, install and activate the [Font Awesome 4 Menus](https://wordpress.org/plugins/font-awesome-4-menus/) plugin. This allows you to add an icon to any menu item.
+To have a customized set of icon links on the front of the site, download, install and activate the [Font Awesome 5 Menus](https://github.com/cogdog/font-awesome-5-menus) plugin. This allows you to add an icon to any menu item.
 
 From the Wordpress Dashboard look under **Appearances** for **Menus**. Click **create a new menu**  name it whatever you like -- `social` is  a good choice. Under  **Menu Settings** next to **Display Location** check the box for `Social Media`. 
 
@@ -135,22 +135,28 @@ To set the icon, you must first enable the visibility of CSS classes for each me
 
 ![](images/screen-options.jpg "Enabling screen options for menus")
 
-Open an item in your Social Menu and you will now see a field for entering CSS Class names. You have the choice to add from [well over 400 icons in the Font Awesome collection](http://fontawesome.io/icons/). Find the name of the icon you wish to use, and enter it's name as a CSS class with `fa-` in front. 
+Open an item in your Social Menu and you will now see a field for entering CSS Class names. You have the choice to add from [well over 4000 icons in the Font Awesome collection](http://fontawesome.io/icons/). Find the name of the icon you wish to use, and enter it's all of it's class names as listed,
 
-For example, these are the class names to render the icon for typical social media sites (these should be all lower case):
+For example these are the class names to render the icon for typical social media sites (these should be all lower case):
 
-* fa-twitter
-* fa-facebook
-* fa-youtube
-* fa-linkedin
-* fa-instagram
-* fa-flickr
+* fab fa-twitter
+* fab fa-facebook
+* fab fa-youtube
+* fab fa-linkedin
+* fab fa-instagram
+* fab fa-flickr
 
 With the Font Awesome icons, you can add any site you wish to be in your footer and pick the icon you prefer.
 
 **Save** your menu and check out the spiffy icons in the footer.
 
 ![](images/font-awesome-icons.jpg "")
+
+In addition, if you want to provide a tool tip hover for the icons, look again under  **Screen Options** and enable the option for **Title Attribute**. This adds another editable field to add the tooltip text.
+
+![](images/menu-title-attribute.jpg "")
+
+
 
 
 
