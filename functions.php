@@ -480,7 +480,7 @@ add_action( 'after_switch_theme', 'splot_import_customizer_settings' );
 
 function strip_first_numbers( $str ) {
  	// a hack function to remove numbers and dashes from the front of a string to prevent
- 	// creating illegale CSS ids (failed to get a proper preg_replace_callback to work 
+ 	// creating illegal CSS ids (failed to get a proper preg_replace_callback to work 
  	
  	$not_allowed = ['-', '0','1','2','3','4','5','6','7','8','9'];
  	
@@ -494,9 +494,8 @@ function strip_first_numbers( $str ) {
  	
 }
 
-
 // Load plugin requirements file to display admin notices.
-require get_template_directory() . '/inc/splot-plugins.php';
+require get_stylesheet_directory() . '/includes/splot-plugins.php';
 
 
 

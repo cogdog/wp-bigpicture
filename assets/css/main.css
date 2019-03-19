@@ -2221,6 +2221,10 @@ span.social-network-name, span.fontawesome-text {
     display: none;
 }
 
+ul.actions li a {
+    text-decoration: none;
+}
+
 
 
 p.edit-this {

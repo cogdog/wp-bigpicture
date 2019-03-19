@@ -60,11 +60,23 @@ Previously the theme was limited to 10 items on the front page, as of version 1.
 * The Road in Spain (Hans and Jennifer Anderson) http://theroadinspain.com/
 * What Works in Stories? (workshop) https://cog.dog/roo/storymaking/
 
+## Installing From Reclaim Hosting
+
+If you are wise enough to host your web sites at [Reclaim Hosting[(http://reclaimhosting.com/) you have the option of installing a fully functioning site with this theme, recommended plugins, and sample content, and do it in one click. *But wait there is more!* With this method of installing your site, future updates to the theme are automatically added to your site.
+
+In your cpanel, under **Applications** go to **All Applications**. This theme is available listed under Fratured Applications; just install from there.
+
+
+![](images/reclaim-featured.jpg "Reclaim Hosting Featured Applications")
+
+Note that unlike other WordPress installs, this one will not preserve your username/password, so be sure to save that information. 
+
+When it's done, log into your new site and start making it your own. 
 
 
 ## Installing from Scratch
 
-Install this theme on any self hosted Wordpress site. No luck on Wordpress.com, get a real web hosting package. 
+Install this theme on any self hosted Wordpress site. No luck on Wordpress.com, get a real web hosting package.  
 
 You should download a ZIP file of this GitHub Repo (that's via the green **Clone or Download*" button above as a file `wp-bigpicture-master.zip`). 
 

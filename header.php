@@ -47,4 +47,4 @@
 
 				<nav>
 					<ul>
-						<li><a href="#intro"><?php echo get_bigpicture_intro_menu_label() ?></a></li>
+						<li><a href="<?php echo site_url();?>/#intro"><?php echo get_bigpicture_intro_menu_label() ?></a></li>
