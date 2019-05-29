@@ -47,6 +47,7 @@ Previously the theme was limited to 10 items on the front page, as of version 1.
 
 * Aaron Davis http://home.readwriterespond.com/
 * Affordances of [silly] Digital Media (workshop) https://cog.dog/roo/silly/
+* Buy-in For Badging http://nursekillam.com/badge/
 * Developing Digital Fluency through the Open Web & Connected Learning (Coventry University) http://alanlevineetal.coventry.domains/
 * Edudoodle Portfolio http://edudoodle.com/
 * First version http://lab.cogdogblog.com/bigpicture/
