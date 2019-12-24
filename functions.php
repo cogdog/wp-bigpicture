@@ -128,7 +128,12 @@ function bigpicture_scripts() {
 	// Big Picture CSS
 	wp_register_style( 'bigpicture-style', get_stylesheet_directory_uri() . '/assets/css/main.css' );
 	wp_enqueue_style( 'bigpicture-style' );
-
+	
+	
+	// big pictuer wordpress  CSS
+	wp_register_style( 'bigpicture-style-wp', get_stylesheet_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'bigpicture-style-wp' );	
+	
 	// poptrox jquery down in the footer you go
 	wp_register_script( 'bigpicture-poptrox' , get_stylesheet_directory_uri() . '/assets/js/jquery.poptrox.min.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'bigpicture-poptrox' );
@@ -176,6 +181,12 @@ function bigpicture_register_theme_customizer( $wp_customize ) {
 	*/
 
 
+	// Add section for this theme
+	$wp_customize->add_section( 'intro_stuff' , array(
+		'title'    => __('Big Picture','bigpicture'),
+		'priority' => 25
+	) );
+	
 	// Add setting for header
 	$wp_customize->add_setting( 'intro_header_text', array(
 		 'default'           => __( 'Hey', 'bigpicture' ),
@@ -252,11 +263,6 @@ function bigpicture_register_theme_customizer( $wp_customize ) {
 	);
 
 
-	// Add section for header
-	$wp_customize->add_section( 'intro_stuff' , array(
-		'title'    => __('Intro Section','bigpicture'),
-		'priority' => 500
-	) );
 	
 	
  	// Sanitize text
@@ -358,6 +364,7 @@ function bigpicture_build_meta_box( $post ){
 
 function bigpicture_save_meta_boxes_data( $post_id ) {
 
+
     // Checks save status
     $is_autosave = wp_is_post_autosave( $post_id );
     $is_revision = wp_is_post_revision( $post_id );
@@ -374,7 +381,9 @@ function bigpicture_save_meta_boxes_data( $post_id ) {
 	// update page name label
 	if ( isset( $_REQUEST['button_label'] ) ) {
 		update_post_meta( $post_id, '_button_label', sanitize_text_field( $_POST['button_label'] ) );
+		
 	}
+	
 	
 }
 

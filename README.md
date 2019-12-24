@@ -248,6 +248,7 @@ If you ever need to edit the Gallery (e.g. change the images), revert the name o
 
 ## Features / History
 
+* v1.1 (Dec 23, 2019) Minor cleanup, language attribute in header, change for newer Font Awesome 5 Menus plugin, Customizer labeles more meaningful
 * v1.04 (Sep 26, 2018) Removed 10 post/item limit for number of sections. Added new code that displays dismissible admin notice if Font Awesome 4 Menus plugin not installed or activated.
 * v1.0 (Aug 12, 2018) Release version enabled with data files needed for one click install at Reclaim Hosting. 
 * v0.6 (Jan  1, 2018)  Deprecated use of Customizer Social Icons and re-wrote instructions to use Font-Awesome 4 Menus

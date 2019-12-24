@@ -3,13 +3,118 @@ Theme Name: WP Big Picture
 Theme URI: http://github.com/cogdog/wp-bigpicture
 Author: Alan Levine
 Author URI: http://cog.dog
-Version: 1.06
+Version: 1.1
 Description: A large image single page calling card site, based on HTML5 UP theme Big Picture by HTML5 UP
 License: Free for personal and commercial use under the CCA 3.0 license
 License URI: http://html5up.net/license
 */
 
-/* note All CSS is loaded from assets/main.css
-   Do not waste time putting anything here!
-   Use the Wordpress Customizer to add additional CSS
-*/
+/* 	base CSS (HTML5up styles) loaded from assets/main.css 
+	
+	These are extras for WP-Big Picture theme - override
+	anything in Customizer.
+                                                          */
+
+/* Single item styles */
+
+p.edit-this {
+    text-align: right;
+    font-size: 90%;
+    color: gray;
+}
+
+a.post-edit-link {
+    text-decoration: none;
+     color: gray;
+}
+
+a.more-link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.twitter-tweet-rendered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.style3 h2, .style3 h3, .style3 h4, .style3 h5,  .style3 h6  {
+    text-align: center;
+}
+
+.main.style1 h2 {
+    text-shadow: -2px -2px 0 #060606, 2px -2px 0 #060606, -2px 2px 0 #060606, 2px 2px 0 #060606;
+}
+
+.main.style1 p {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.main.style2 > .content {
+    opacity: 0.9;
+}
+
+
+/* Here for alignment? */
+
+figcaption, figure {
+	display:block;
+}
+
+img[class*="wp-image-"], .wp-caption img {
+	margin-top: 2em;
+    height: auto;
+    width: 100%;
+}
+
+.wp-caption {
+	color: #666;
+	font-size: 0.8125rem;
+	font-style: italic;
+	width: 100%!important;
+	margin-bottom: 2em;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	border-bottom: 1px solid #ddd;
+    line-height: 1.5;
+    padding-bottom: 0.2em;
+}
+
+embed, iframe, object {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* For Social Media menu */
+span.social-network-name, span.fontawesome-text {
+    display: none;
+}
+
+ul.actions li a {
+    text-decoration: none;
+}
