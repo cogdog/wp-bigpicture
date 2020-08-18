@@ -76,7 +76,7 @@ In your cpanel, under **Applications** go to **All Applications**. This theme is
 
 Install this theme on any self hosted Wordpress site. No luck on Wordpress.com, get a real web hosting package.  
 
-You can download a ZIP file of this theme via the green **Code*" button above (the Download Zip option) or directly  `wp-bigpicture-master.zip`). 
+You can download a ZIP file of this theme via the green **Code*" button above (use the Download Zip option). 
 
 The zip can be uploaded directly to your site via **Themes** in the Wordpress dashboard, then **Add Theme** and finally **Upload Theme**. If you run into size upload limits or just prefer going old school like me, unzip the package and ftp the entire folder into your `wp-content/themes` directory.
 
