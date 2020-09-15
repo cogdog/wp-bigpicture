@@ -45,21 +45,30 @@ Previously the theme was limited to 10 items on the front page, as of version 1.
 
 ## Examples
 
+* 25 Years of Ed Tech: The Audio Version https://25years.opened.ca/
 * Aaron Davis http://home.readwriterespond.com/
+* About Ryan Collins https://about.ryancollins.org/
 * Affordances of [silly] Digital Media (workshop) https://cog.dog/roo/silly/
+* Andrew Duncan Photography https://andrewduncan.photography/
+* Aurex Relocations https://aurexrelocations.com/
 * Buy-in For Badging http://nursekillam.com/badge/
 * Developing Digital Fluency through the Open Web & Connected Learning (Coventry University) http://alanlevineetal.coventry.domains/
-* Edudoodle Portfolio http://edudoodle.com/
+* Ellie Glade http://ellieglade.com/
 * First version http://lab.cogdogblog.com/bigpicture/
 * Fourwinds Holiday Cottage http://fourwindsholidaycottage.com/
+* Humane Infrastructures https://humaneinfrastructures.humspace.ucla.edu/
 * JustLego101 http://justlego101.com/ 
+* Kenneth Cohen http://kencohen.org/
 * Laura Killam Dossier http://dossier.nursekillam.com/
 * Maha Bali & Colleagues (DMLL Visiting Fellows, Coventry University) http://mahabalietal.coventry.domains/
+* Mechanical Reproduction https://mechanical-reproduction.com/
 * North and South Main Streets "Explore our stories. Touring Cork city through sound!" http://nms.pennyjohnston.org/cms/
 * Open Learning Lab (Lansing Community College) https://lab.openlcc.net/
+* Paint Freedom Literature http://paintfreedom.org/
 * Show Your Work! (workshop) https://cog.dog/roo/show/
 * The Road in Spain (Hans and Jennifer Anderson) http://theroadinspain.com/
 * What Works in Stories? (workshop) https://cog.dog/roo/storymaking/
+* Winter Classic https://winterclassic.jessdaniels.umasscreate.net/
 
 ## Installing From Reclaim Hosting
 
