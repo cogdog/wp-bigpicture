@@ -52,21 +52,31 @@ Previously the theme was limited to 10 items on the front page, as of version 1.
 * Andrew Duncan Photography https://andrewduncan.photography/
 * Aurex Relocations https://aurexrelocations.com/
 * Buy-in For Badging http://nursekillam.com/badge/
+* COVID-19 A Semester in Quarantine http://maggiemrowka.net/cms/
 * Developing Digital Fluency through the Open Web & Connected Learning (Coventry University) http://alanlevineetal.coventry.domains/
+* Developing Writers https://oeglobal21.trubox.ca/ (OEGlobal21 presentation by Brenna Clarke Gray, Thompson Rivers University)
 * Ellie Glade http://ellieglade.com/
 * First version http://lab.cogdogblog.com/bigpicture/
 * Fourwinds Holiday Cottage http://fourwindsholidaycottage.com/
+* Hive http://honeycombe.net/
 * Humane Infrastructures https://humaneinfrastructures.humspace.ucla.edu/
+* Jale Peters "All Trades Jake" http://jakealltrades.com/
+* Jessica's Portfolio http://jramirezportillo.com/
+* Joe Iaccarino, P.E. https://www.joeiaccarino.com/
 * JustLego101 http://justlego101.com/ 
-* Kenneth Cohen http://kencohen.org/
+* Kenneth Cohen: Revolution is Relative http://kencohen.org/
+* Let's Party with Christy: Experience Mixologist http://letspartywithchristie.com/
 * Laura Killam Dossier http://dossier.nursekillam.com/
 * Maha Bali & Colleagues (DMLL Visiting Fellows, Coventry University) http://mahabalietal.coventry.domains/
 * Mechanical Reproduction https://mechanical-reproduction.com/
+* Niels Eichhorn http://nielseichhorn.com/
 * North and South Main Streets "Explore our stories. Touring Cork city through sound!" http://nms.pennyjohnston.org/cms/
 * Open Learning Lab (Lansing Community College) https://lab.openlcc.net/
 * Paint Freedom Literature http://paintfreedom.org/
+* Ryan Collins https://about.ryancollins.org/
 * Show Your Work! (workshop) https://cog.dog/roo/show/
 * The Road in Spain (Hans and Jennifer Anderson) http://theroadinspain.com/
+* Teeth https://teeth.farm/
 * What Works in Stories? (workshop) https://cog.dog/roo/storymaking/
 * Winter Classic https://winterclassic.jessdaniels.umasscreate.net/
 
